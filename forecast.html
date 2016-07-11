@@ -1,0 +1,24 @@
+<h1>Forecast for {{city}}</h1>
+<hr/>
+  
+<a href="#/">Back To Search</a><br/><br/>
+
+ Days :<a href="#/forecast/2" ng-class="{'bg-primary':days==='2'}">2</a> |  <a href ="#/forecast/5" ng-class="{'bg-primary':days==='5'}">5</a> | <a href="#/forecast/7" ng-class="{'bg-primary':days==='7'}">7</a>
+<br/><br/>
+
+
+<div class="container">
+
+
+    <div class="row">
+    
+      <div class="col-md-12">
+        
+        
+           <my-directive ng-repeat="w in whetherResult.list"></my-directive>
+        </div>
+    
+    
+    
+</div>
+</div>
